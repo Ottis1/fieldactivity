@@ -33,7 +33,9 @@ run_app <- function(
           selectInput("login_language",
                       label = "" ,
                       choices = languages),
-          p(readLines(system.file("user_doc", "inst_frontpage.txt", package = "fieldactivity"), warn = F)[1], style="text-align: justify;"),
+          p(readLines(system.file("user_doc", "inst_frontpage.txt", package = "fieldactivity"), warn = F)[1],
+            style="text-align: justify;"),
+
           br(), br(),
           readLines(system.file("user_doc", "inst_frontpage.txt", package = "fieldactivity"), warn = F)[3],
           br(),
